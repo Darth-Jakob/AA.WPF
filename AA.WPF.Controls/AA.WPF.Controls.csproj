@@ -53,8 +53,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\OutlineTextBlock.cs" />
     <Compile Include="Control\SpinNumericTextBox.cs" />
-    <Compile Include="CustomControl1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

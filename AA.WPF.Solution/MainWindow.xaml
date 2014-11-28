@@ -4,11 +4,14 @@
         Title="MainWindow" Height="600" Width="800"
         xmlns:c="clr-namespace:AA.WPF.Controls;assembly=AA.WPF.Controls">
     <Grid>
-        <DockPanel LastChildFill="False" VerticalAlignment="Top">
-            <TextBlock Text="Age : " DockPanel.Dock="Left"/>
-            <c:SpinNumericTextBox  DockPanel.Dock="Left"/>
-        </DockPanel>
-        
-        
+        <StackPanel>
+            <DockPanel LastChildFill="False" VerticalAlignment="Top">
+                <TextBlock Text="SpinNumericTextBox : " DockPanel.Dock="Left"/>
+                <c:SpinNumericTextBox  DockPanel.Dock="Left"/>
+            </DockPanel>
+
+            <c:OutlineTextBlock Text="OutlineTextBlock" Fill="#FFFFFFFF" Stroke="#FF3333FF" FontSize="20" DockPanel.Dock="Top"/>
+
+        </StackPanel>
     </Grid>
 </Window>

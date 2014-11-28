@@ -13,3 +13,6 @@ D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.pdb
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Controls.dll
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Controls.pdb
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.csprojResolveAssemblyReference.cache
+D:\Project\Jk\AAWPF\AA.WPF.Solution\bin\Debug\AA.WPF.Solution.exe.config
+D:\Project\Jk\AAWPF\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.exe
+D:\Project\Jk\AAWPF\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.pdb
