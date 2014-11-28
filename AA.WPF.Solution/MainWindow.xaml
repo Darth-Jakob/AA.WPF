@@ -1,0 +1,14 @@
+﻿<Window x:Class="AA.WPF.Solution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="600" Width="800"
+        xmlns:c="clr-namespace:AA.WPF.Controls;assembly=AA.WPF.Controls">
+    <Grid>
+        <DockPanel LastChildFill="False" VerticalAlignment="Top">
+            <TextBlock Text="Age : " DockPanel.Dock="Left"/>
+            <c:SpinNumericTextBox  DockPanel.Dock="Left"/>
+        </DockPanel>
+        
+        
+    </Grid>
+</Window>

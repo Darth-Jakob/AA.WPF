@@ -1,0 +1,15 @@
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Solution.exe.config
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Solution.exe
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Solution.pdb
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\MainWindow.baml
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\MainWindow.g.cs
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\App.g.cs
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution_MarkupCompile.cache
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.g.resources
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.Properties.Resources.resources
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.csproj.GenerateResource.Cache
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.exe
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.pdb
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Controls.dll
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\bin\Debug\AA.WPF.Controls.pdb
+D:\Project\Jk\AA.WPF.Solution\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.csprojResolveAssemblyReference.cache
