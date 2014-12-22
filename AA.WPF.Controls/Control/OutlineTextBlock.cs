@@ -7,7 +7,7 @@ using System.Windows.Shapes;
 
 namespace AA.WPF.Controls
 {
-    public class OutlineTextBlock : Shape
+    public class OutlineTextBlock : FrameworkElement
     {
         private Geometry _textGeometry;
 
@@ -48,71 +48,84 @@ namespace AA.WPF.Controls
                                new FrameworkPropertyMetadata(SystemFonts.MessageFontWeight,
                                    FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.Inherits,
                                    OnPropertyChanged));
+
+        public static readonly DependencyProperty StrokeProperty = DependencyProperty.Register("Stroke", typeof(Brush), typeof(OutlineTextBlock),
+                                new FrameworkPropertyMetadata(new SolidColorBrush(Colors.Black),
+                                    FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.Inherits,
+                                    OnPropertyChanged));
+        public static readonly DependencyProperty StrokeThicknessProperty = DependencyProperty.Register("StrokeThickness", typeof(ushort), typeof(OutlineTextBlock),
+                                new FrameworkPropertyMetadata((ushort)0, FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.Inherits,
+                                OnPropertyChanged));
+
+        public static readonly DependencyProperty FillProperty = DependencyProperty.Register("Fill", typeof(Brush), typeof(OutlineTextBlock),
+                                new FrameworkPropertyMetadata(new SolidColorBrush(Colors.LightSteelBlue), FrameworkPropertyMetadataOptions.AffectsRender | FrameworkPropertyMetadataOptions.AffectsMeasure | FrameworkPropertyMetadataOptions.Inherits,
+                                OnPropertyChanged));
+
         #endregion
 
         #region Property Accessors
-        [Bindable(true), Category("Appearance")]
-        [TypeConverter(typeof(PointConverter))]
+
+        public Brush Fill
+        {
+            get { return (Brush)GetValue(FillProperty); }
+            set { SetValue(FillProperty, value); }
+        }
+
+        public ushort StrokeThickness
+        {
+            get { return (ushort)GetValue(StrokeThicknessProperty); }
+            set { SetValue(StrokeThicknessProperty, value); }
+        }
+
+        public Brush Stroke
+        {
+            get { return (Brush)GetValue(StrokeProperty); }
+            set { SetValue(StrokeProperty, value); }
+        }
+
         public Point Origin
         {
             get { return (Point)GetValue(OriginPointProperty); }
             set { SetValue(OriginPointProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
-        [Localizability(LocalizationCategory.Font)]
-        [TypeConverter(typeof(FontFamilyConverter))]
         public FontFamily FontFamily
         {
             get { return (FontFamily)GetValue(FontFamilyProperty); }
             set { SetValue(FontFamilyProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
-        [TypeConverter(typeof(FontSizeConverter))]
-        [Localizability(LocalizationCategory.None)]
         public double FontSize
         {
             get { return (double)GetValue(FontSizeProperty); }
             set { SetValue(FontSizeProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
-        [TypeConverter(typeof(FontStretchConverter))]
         public FontStretch FontStretch
         {
             get { return (FontStretch)GetValue(FontStretchProperty); }
             set { SetValue(FontStretchProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
-        [TypeConverter(typeof(FontStyleConverter))]
         public FontStyle FontStyle
         {
             get { return (FontStyle)GetValue(FontStyleProperty); }
             set { SetValue(FontStyleProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
-        [TypeConverter(typeof(FontWeightConverter))]
         public FontWeight FontWeight
         {
             get { return (FontWeight)GetValue(FontWeightProperty); }
             set { SetValue(FontWeightProperty, value); }
         }
 
-        [Bindable(true), Category("Appearance")]
         public string Text
         {
             get { return (string)GetValue(TextProperty); }
             set { SetValue(TextProperty, value); }
         }
-        #endregion
 
-        protected override Geometry DefiningGeometry
-        {
-            get { return _textGeometry ?? Geometry.Empty; }
-        }
+        #endregion
 
         private static void OnPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -126,7 +139,16 @@ namespace AA.WPF.Controls
                 _textGeometry = null;
                 var formattedText = new FormattedText(Text, Thread.CurrentThread.CurrentUICulture, FlowDirection.LeftToRight, new Typeface(FontFamily, FontStyle, FontWeight, FontStretch), FontSize, Brushes.Black);
                 _textGeometry = formattedText.BuildGeometry(Origin);
+                _textGeometry.Freeze();
+                this.MinWidth = formattedText.Width;
+                this.MinHeight = formattedText.Height;
             }
+        }
+
+        protected override void OnRender(DrawingContext drawingContext)
+        {
+            CreateTextGeometry();
+            drawingContext.DrawGeometry(Fill, new Pen(Stroke, StrokeThickness), _textGeometry);
         }
     }
 }
