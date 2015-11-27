@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AA.WPF.MVVM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace AA.WPF.Solution
         public MainWindow()
         {
             InitializeComponent();
+            this.Loaded += MainWindow_Loaded;
         }
+
+        void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.Loaded -= MainWindow_Loaded;
+            this.DataContext = new MainVIewModel();
+        }
+
+       
+
+
     }
 }

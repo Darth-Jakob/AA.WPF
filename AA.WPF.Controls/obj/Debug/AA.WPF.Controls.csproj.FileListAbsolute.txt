@@ -10,3 +10,15 @@ D:\Project\Jk\AA.WPF.Solution\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.dll
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.pdb
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Project\Jk\AA.WPF.Solution\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csprojResolveAssemblyReference.cache
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\bin\Debug\AA.WPF.Controls.dll
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\bin\Debug\AA.WPF.Controls.pdb
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csprojResolveAssemblyReference.cache
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls_MarkupCompile.cache
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls_MarkupCompile.lref
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\Themes\Generic.baml
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.g.resources
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.Properties.Resources.resources
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csproj.GenerateResource.Cache
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.dll
+D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.pdb

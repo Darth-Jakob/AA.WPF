@@ -9,9 +9,16 @@
                 <TextBlock Text="SpinNumericTextBox : " DockPanel.Dock="Left"/>
                 <c:SpinNumericTextBox  DockPanel.Dock="Left"/>
             </DockPanel>
-
-            <c:OutlineTextBlock Text="OutlineTextBlock" Fill="#FFFFFFFF" Stroke="#FF3333FF" FontSize="20" DockPanel.Dock="Top"/>
-
+            
+            <c:OutlineTextBlock Fill="#FFFF00FF" Stroke="#FF3333FF" FontSize="20" DockPanel.Dock="Top" Text="{Binding TestText}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            
+            <Button Content="DelegateCommand Binding" Command="{Binding ButtonCommand}"/>
+            
+            <DockPanel Margin="0,3">
+                <TextBox Width="100" DockPanel.Dock="Left" Text="{Binding TestText}" Margin="10,0"/>
+                <Button Content="DelegateCommand Binding With Parameter" Command="{Binding ButtonParameterCommand}" CommandParameter="{Binding TestText}"/>
+            </DockPanel>
+            
         </StackPanel>
     </Grid>
 </Window>

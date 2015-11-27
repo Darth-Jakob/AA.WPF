@@ -61,6 +61,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="MainVIewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -97,6 +98,10 @@
     <ProjectReference Include="..\AA.WPF.Controls\AA.WPF.Controls.csproj">
       <Project>{d9f7db0a-be5d-4ab9-b9f7-f371bf91887c}</Project>
       <Name>AA.WPF.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AA.WPF.MVVM\AA.WPF.MVVM.csproj">
+      <Project>{e8be844b-0d38-48a2-9873-c4db068dc6c0}</Project>
+      <Name>AA.WPF.MVVM</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
