@@ -1,4 +1,5 @@
-AA.WPF Control Library
+AA.WPF Helper Library
 =====
 
-A WPF Custom controls Library
+WPF Custom controls Library
+MVVM basic Framework
