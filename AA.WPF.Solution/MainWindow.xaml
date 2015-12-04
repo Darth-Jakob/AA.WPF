@@ -19,6 +19,11 @@
                 <Button Content="DelegateCommand Binding With Parameter" Command="{Binding ButtonParameterCommand}" CommandParameter="{Binding TestText}"/>
             </DockPanel>
             
+            
+            
+            <Button Content="Get TestService" Click="ServiceLocator_Button_Click"/>
+            <Button Content="Get TestSErvice2" Click="ServiceLocator2_Button_Click"/>
+            
         </StackPanel>
     </Grid>
 </Window>

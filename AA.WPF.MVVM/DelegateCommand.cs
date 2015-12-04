@@ -9,6 +9,9 @@ using System.Windows.Threading;
 
 namespace AA.WPF.MVVM
 {
+    /// <summary>
+    /// DelegateCommand 공통 부모 class
+    /// </summary>
     public class DelegateCommandBase : ICommand
     {
         internal Action _execute = null;
@@ -66,10 +69,6 @@ namespace AA.WPF.MVVM
 
     public class DelegateCommand : DelegateCommandBase
     {
-        //private readonly Action _execute = null;
-        //private readonly Predicate<object> _canExecute = null;
-        //private readonly Dispatcher _dispatcher = null;
-
         /// <summary>
         /// 생성자 오버라이드
         /// </summary>
@@ -95,12 +94,9 @@ namespace AA.WPF.MVVM
         }
     }
 
+    //Generic 타입의 DelegateCommand
     public class DelegateCommand<T> : DelegateCommandBase
     {
-        //private readonly Action<T> _execute = null;
-        //private readonly Predicate<T> _canExecute = null;
-        //private readonly Dispatcher _dispatcher = null;
-
         public DelegateCommand(Action<T> execute, Predicate<object> canExecute)
         {
             if (execute == null && canExecute == null)
@@ -140,57 +136,5 @@ namespace AA.WPF.MVVM
                 _executeWithParameter((object)parameter);
             }
         }
-
-        ///// <summary>
-        ///// ICommand 구현부
-        ///// Command의 실행여부 판단
-        ///// </summary>
-        ///// <param name="parameter"></param>
-        ///// <returns>실행 여부 결과값을 반환한다</returns>
-        //bool ICommand.CanExecute(object parameter)
-        //{
-        //    return CanExecute((T)parameter);
-        //}
-
-        ///// <summary>
-        ///// ICommand 구현부
-        ///// </summary>
-        ///// <param name="parameter"></param>
-        //void ICommand.Execute(object parameter)
-        //{
-        //    CanExecute((T)parameter);
-        //}
-
-        //public void RaiseCanExecuteChanged()
-        //{
-        //    OnCanExecuteChanged();
-        //}
-
-        //public event EventHandler CanExecuteChanged;
-
-        ///// <summary>
-        ///// UI Thread에 접근 가능한 이벤트로 등록하도록 분기처리
-        ///// </summary>
-        //protected virtual void OnCanExecuteChanged()
-        //{
-        //    EventHandler canExecuteChangedHandler = CanExecuteChanged;
-        //    if (canExecuteChangedHandler != null)
-        //    {
-        //        if (_dispatcher != null && !_dispatcher.CheckAccess())
-        //        {
-        //            _dispatcher.BeginInvoke(DispatcherPriority.Normal, (Action)OnCanExecuteChanged);
-        //        }
-        //        else
-        //        {
-        //            canExecuteChangedHandler(this, EventArgs.Empty);
-        //        }
-        //    }
-        //}
-
-        //event EventHandler ICommand.CanExecuteChanged
-        //{
-        //    add { throw new NotImplementedException(); }
-        //    remove { throw new NotImplementedException(); }
-        //}
     }
 }

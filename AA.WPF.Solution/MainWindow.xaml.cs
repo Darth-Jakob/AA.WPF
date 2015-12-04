@@ -31,7 +31,30 @@ namespace AA.WPF.Solution
         {
             this.Loaded -= MainWindow_Loaded;
             this.DataContext = new MainVIewModel();
+
+            ServiceLocator.Instance.RegisterService<TestService>(new TestService());
+            ServiceLocator.Instance.RegisterService<TestService2>(new TestService2());
         }
+
+        private void ServiceLocator_Button_Click(object sender, RoutedEventArgs e)
+        {
+            TestService service = ServiceLocator.Instance.GetService<TestService>();
+            if (service != null)
+            {
+                MessageBox.Show("Get TestService");
+            }
+        }
+
+        private void ServiceLocator2_Button_Click(object sender, RoutedEventArgs e)
+        {
+            TestService2 service = ServiceLocator.Instance.GetService<TestService2>();
+            if (service != null)
+            {
+                MessageBox.Show("Get TestService2");
+            }
+        }
+        
+
 
        
 

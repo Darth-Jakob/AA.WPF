@@ -11,7 +11,6 @@ namespace AA.WPF.Solution
 {
     public class MainVIewModel : ObservableObject
     {
-
         #region Command
         
         ICommand _ButtonCommand = null;

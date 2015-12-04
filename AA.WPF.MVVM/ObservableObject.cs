@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace AA.WPF.MVVM
 {
+    /// <summary>
+    /// Data Binding 가능하도록하는 부모 class
+    /// </summary>
     public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
