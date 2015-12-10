@@ -33,3 +33,5 @@ D:\개인소스\github\AA.WPF\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.Properti
 D:\개인소스\github\AA.WPF\AA.WPF.Solution\obj\Debug\AA.WPF.Solution.csproj.GenerateResource.Cache
 D:\개인소스\github\AA.WPF\AA.WPF.Solution\bin\Debug\AA.WPF.MVVM.dll
 D:\개인소스\github\AA.WPF\AA.WPF.Solution\bin\Debug\AA.WPF.MVVM.pdb
+D:\개인소스\github\AA.WPF\AA.WPF.Solution\obj\Debug\AA.WPF.Solution_MarkupCompile.lref
+D:\개인소스\github\AA.WPF\AA.WPF.Solution\obj\Debug\GeneratedInternalTypeHelper.g.cs

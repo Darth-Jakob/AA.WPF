@@ -55,6 +55,9 @@
     </ApplicationDefinition>
     <Compile Include="TestService2.cs" />
     <Compile Include="TestService.cs" />
+    <Compile Include="ViewModel\Test1ViewModel.cs" />
+    <Compile Include="ViewModel\Test2ViewModel.cs" />
+    <Compile Include="ViewModel\Test3ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

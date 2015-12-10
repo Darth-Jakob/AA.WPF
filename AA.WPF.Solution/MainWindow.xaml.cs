@@ -17,11 +17,7 @@ using System.Windows.Shapes;
 
 namespace AA.WPF.Solution
 {
-    public class TESTClass : IMessage
-    {
-
-    }
-
+  
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -40,24 +36,7 @@ namespace AA.WPF.Solution
 
             ServiceLocator.Instance.RegisterService<TestService>(new TestService());
             ServiceLocator.Instance.RegisterService<TestService2>(new TestService2());
-
-            Messenger.Instance.Received<TESTClass>(OnReceivedTestClass);
-            Messenger.Instance.Received<TESTClass>(OnReceivedTestClass);
-            Messenger.Instance.Received<TESTClass>(OnReceivedTestClass2);
-            Messenger.Instance.Send<TESTClass>(new TESTClass());
         }
-
-        private void OnReceivedTestClass(TESTClass obj)
-        {
-            
-        }
-
-        private void OnReceivedTestClass2(TESTClass obj)
-        {
-
-        }
-
-    
 
         private void ServiceLocator_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -86,5 +65,16 @@ namespace AA.WPF.Solution
        
 
 
+    }
+
+
+    public class TEST1Message : IMessage
+    {
+        public string Value { get; set; }
+    }
+
+    public class TEST2Message : IMessage
+    {
+        public string Value { get; set; }
     }
 }
