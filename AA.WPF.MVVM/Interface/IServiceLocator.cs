@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AA.WPF.MVVM
+namespace AA.WPF.MVVM.Interface
 {
     /// <summary>
     /// ServiceLocator interface

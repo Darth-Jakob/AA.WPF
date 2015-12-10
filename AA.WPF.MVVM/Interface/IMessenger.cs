@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 namespace AA.WPF.MVVM.Interface
 {
     /// <summary>
-    /// ServiceLocator에 등록된 Service Interface
+    /// vm Communication Interface
     /// </summary>
-    public interface IService
+    public interface IMessenger
     {
-
+        
     }
 }

@@ -44,8 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Interface\IMessage.cs" />
+    <Compile Include="Interface\IMessenger.cs" />
     <Compile Include="Interface\IService.cs" />
     <Compile Include="Interface\IServiceLocator.cs" />
+    <Compile Include="MessageInfo.cs" />
+    <Compile Include="Messenger.cs" />
     <Compile Include="ObservableObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceLocator.cs" />
