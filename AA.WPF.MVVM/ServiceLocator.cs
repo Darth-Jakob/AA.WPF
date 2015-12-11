@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace AA.WPF.MVVM
 {
@@ -24,6 +26,7 @@ namespace AA.WPF.MVVM
         }
 
         #endregion
+
         #region public Func
         
         public void RegisterService<T>(object service) where T : IService
@@ -59,7 +62,15 @@ namespace AA.WPF.MVVM
                 //기존에 등록된 service가 없음
                 throw new Exception("Service is regist first");
             }
+            return FindService<T>();
+        }
 
+        #endregion
+
+        #region private Func
+        
+        private T FindService<T>()
+        {
             var find = RegistServices.FirstOrDefault(o => o.GetType().Equals(typeof(T)));
             if (find == null)
             {
@@ -73,6 +84,7 @@ namespace AA.WPF.MVVM
         }
 
         #endregion
+
         #region variable & property
         internal IList<IService> RegistServices { get; private set; }
         #endregion

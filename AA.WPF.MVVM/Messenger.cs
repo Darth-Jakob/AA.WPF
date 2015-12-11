@@ -64,7 +64,7 @@ namespace AA.WPF.MVVM
                 {
                     foreach (var item in find.GetInvocationList())
                     {
-                        if (_dispatcher != null && _dispatcher.CheckAccess())
+                        if (_dispatcher != null && !_dispatcher.CheckAccess())
                         {
                             _dispatcher.BeginInvoke(DispatcherPriority.Normal,  new Action(() => item.Invoke(message)));
                         }

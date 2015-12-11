@@ -43,7 +43,7 @@ namespace AA.WPF.Solution
             TestService service = ServiceLocator.Instance.GetService<TestService>();
             if (service != null)
             {
-                MessageBox.Show("Get TestService");
+                //MessageBox.Show("Get TestService");
             }
         }
 
