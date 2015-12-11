@@ -17,12 +17,11 @@ namespace AA.WPF.MVVM
 
         internal void Subscribe(Action<TMessageType> callbackMessage)
         {
-            //기등록된 delegate 있는지 검사
-            if (messageActions.Any(o => o.Method.Name == callbackMessage.Method.Name))
-            {
-                throw new Exception("already Delegte Method subscribed");
-            }
-
+            ////기등록된 delegate 있는지 검사
+            //if (messageActions.Any(o => o.Method.Name == callbackMessage.Method.Name))
+            //{
+            //    throw new Exception("already Delegte Method subscribed");
+            //}
             messageActions.Add(callbackMessage);
         }
 
