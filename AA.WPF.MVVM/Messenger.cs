@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace AA.WPF.MVVM
 {
@@ -22,7 +24,20 @@ namespace AA.WPF.MVVM
 
         #endregion
 
+        #region Constructor
+
+        public Messenger()
+        {
+            if (Application.Current != null)
+            {
+                _dispatcher = Application.Current.Dispatcher;
+            }
+        }
+
+        #endregion
+
         private List<MessageInfo> _registedMessages = null;
+        private Dispatcher _dispatcher = null;
 
         public void Received<TMessageType>(Action<TMessageType> callbackMessage) where TMessageType : IMessage
         {
@@ -49,7 +64,14 @@ namespace AA.WPF.MVVM
                 {
                     foreach (var item in find.GetInvocationList())
                     {
-                        item.Invoke(message);
+                        if (_dispatcher != null && _dispatcher.CheckAccess())
+                        {
+                            _dispatcher.BeginInvoke(DispatcherPriority.Normal,  new Action(() => item.Invoke(message)));
+                        }
+                        else
+                        {
+                            item.Invoke(message);
+                        }
                     }
                 }
             }
