@@ -22,3 +22,14 @@ D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csproj.G
 D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.dll
 D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.pdb
 D:\개인소스\github\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csprojResolveAssemblyReference.cache
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls_MarkupCompile.cache
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.dll
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.pdb
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\AA.WPF.Controls.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\AA.WPF.Controls.pdb
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls_MarkupCompile.lref
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\Themes\Generic.baml
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.g.resources
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.Properties.Resources.resources
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csproj.GenerateResource.Cache

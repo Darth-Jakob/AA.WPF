@@ -53,6 +53,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\DDListbox.cs" />
+    <Compile Include="Control\ImageButton.cs" />
+    <Compile Include="Control\MultiSelectComboBox.cs" />
     <Compile Include="Control\OutlineTextBlock.cs" />
     <Compile Include="Control\SpinNumericTextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">

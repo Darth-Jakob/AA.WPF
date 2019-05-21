@@ -3,3 +3,7 @@ D:\개인소스\github\AA.WPF\AA.WPF.MVVM\bin\Debug\AA.WPF.MVVM.pdb
 D:\개인소스\github\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.dll
 D:\개인소스\github\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.pdb
 D:\개인소스\github\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.csprojResolveAssemblyReference.cache
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\AA.WPF.MVVM.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\AA.WPF.MVVM.pdb
+D:\git\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.dll
+D:\git\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.pdb

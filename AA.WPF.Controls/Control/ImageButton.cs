@@ -1,11 +1,10 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace MCPTT_Dispatcher
+namespace AA.WPF.Controls
 {
     [TemplatePart(Name = "PART_TXT", Type = typeof(TextBlock))]
     /// <summary>
@@ -57,7 +56,7 @@ namespace MCPTT_Dispatcher
 
         public static readonly DependencyProperty IsMouseCapturingProperty = DependencyProperty.Register("IsMouseCapturing", typeof(bool), typeof(ImageButton));
 
-        public static readonly DependencyProperty TextLocationProperty = DependencyProperty.Register("TextLocation", typeof(Enums.ImageButtonTextLocation), typeof(ImageButton), new PropertyMetadata(Enums.ImageButtonTextLocation.Right));
+        public static readonly DependencyProperty TextLocationProperty = DependencyProperty.Register("TextLocation", typeof(ImageButtonTextLocation), typeof(ImageButton), new PropertyMetadata(ImageButtonTextLocation.Right));
 
         public static readonly DependencyProperty ForegroundDisableProperty = DependencyProperty.Register("ForegroundDisable", typeof(Brush), typeof(ImageButton), new PropertyMetadata((SolidColorBrush)(new BrushConverter().ConvertFrom("#FF3d434d"))));
 
@@ -99,9 +98,9 @@ namespace MCPTT_Dispatcher
             set { SetValue(ForegroundPressedProperty, value); }
         }
 
-        public Enums.ImageButtonTextLocation TextLocation
+        public ImageButtonTextLocation TextLocation
         {
-            get { return (Enums.ImageButtonTextLocation)GetValue(TextLocationProperty); }
+            get { return (ImageButtonTextLocation)GetValue(TextLocationProperty); }
             set { SetValue(TextLocationProperty, value); }
         }
 
@@ -220,4 +219,13 @@ namespace MCPTT_Dispatcher
         #endregion
 
     }
+
+    public enum ImageButtonTextLocation
+    {
+        Right,
+        Left,
+        Bottom,
+        Top
+    }
+
 }
