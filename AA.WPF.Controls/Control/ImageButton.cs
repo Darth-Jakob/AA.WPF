@@ -24,11 +24,11 @@ namespace AA.WPF.Controls
         /// <summary>
         /// 기본이미지소스
         /// </summary>
-        public static readonly DependencyProperty ImageDefaultProperty = DependencyProperty.Register("ImageDefault", typeof(ImageSource), typeof(ImageButton));
+        public static readonly DependencyProperty ImageSourceDefaultProperty = DependencyProperty.Register("ImageSourceDefault", typeof(ImageSource), typeof(ImageButton));
         /// <summary>
         /// 마우스오버 이미지소스
         /// </summary>
-        public static readonly DependencyProperty ImageOverProperty = DependencyProperty.Register("ImageOver", typeof(ImageSource), typeof(ImageButton), new PropertyMetadata(new PropertyChangedCallback(OnChangedOver)));
+        public static readonly DependencyProperty ImageSourceOverProperty = DependencyProperty.Register("ImageSourceOver", typeof(ImageSource), typeof(ImageButton), new PropertyMetadata(new PropertyChangedCallback(OnChangedOver)));
 
         private static void OnChangedOver(DependencyObject d, DependencyPropertyChangedEventArgs e)
         {
@@ -40,11 +40,11 @@ namespace AA.WPF.Controls
         /// <summary>
         /// 비활성화 이미지소스
         /// </summary>
-        public static readonly DependencyProperty ImageDisabledProperty = DependencyProperty.Register("ImageDisabled", typeof(ImageSource), typeof(ImageButton));
+        public static readonly DependencyProperty ImageSourceDisabledProperty = DependencyProperty.Register("ImageSourceDisabled", typeof(ImageSource), typeof(ImageButton));
         /// <summary>
         /// pressed 이미지소스
         /// </summary>
-        public static readonly DependencyProperty ImagePressedProperty = DependencyProperty.Register("ImagePressed", typeof(ImageSource), typeof(ImageButton));
+        public static readonly DependencyProperty ImageSourcePressedProperty = DependencyProperty.Register("ImageSourcePressed", typeof(ImageSource), typeof(ImageButton));
         /// <summary>
         /// 마우스 캡쳐 릴리즈 command
         /// </summary>
@@ -109,26 +109,26 @@ namespace AA.WPF.Controls
             get { return GetValue(TextProperty) as string; }
             set { SetValue(TextProperty, value); }
         }
-        public ImageSource ImageDefault
+        public ImageSource ImageSourceDefault
         {
-            get { return GetValue(ImageDefaultProperty) as ImageSource; }
-            set { SetValue(ImageDefaultProperty, value); }
+            get { return GetValue(ImageSourceDefaultProperty) as ImageSource; }
+            set { SetValue(ImageSourceDefaultProperty, value); }
         }
 
-        public ImageSource ImageOver
+        public ImageSource ImageSourceOver
         {
-            get { return GetValue(ImageOverProperty) as ImageSource; }
-            set { SetValue(ImageOverProperty, value); }
+            get { return GetValue(ImageSourceOverProperty) as ImageSource; }
+            set { SetValue(ImageSourceOverProperty, value); }
         }
-        public ImageSource ImageDisabled
+        public ImageSource ImageSourceDisabled
         {
-            get { return GetValue(ImageDisabledProperty) as ImageSource; }
-            set { SetValue(ImageDisabledProperty, value); }
+            get { return GetValue(ImageSourceDisabledProperty) as ImageSource; }
+            set { SetValue(ImageSourceDisabledProperty, value); }
         }
-        public ImageSource ImagePressed
+        public ImageSource ImageSourcePressed
         {
-            get { return GetValue(ImagePressedProperty) as ImageSource; }
-            set { SetValue(ImagePressedProperty, value); }
+            get { return GetValue(ImageSourcePressedProperty) as ImageSource; }
+            set { SetValue(ImageSourcePressedProperty, value); }
         }
         public ICommand MouseCaptureReleaseCommand
         {
@@ -158,19 +158,19 @@ namespace AA.WPF.Controls
         public override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
-            if (ImageDefault != null)
+            if (ImageSourceDefault != null)
             {
-                if (ImageOver == null)
+                if (ImageSourceOver == null)
                 {
-                    ImageOver = ImageDefault;
+                    ImageSourceOver = ImageSourceDefault;
                 }
-                if (ImageDisabled == null)
+                if (ImageSourceDisabled == null)
                 {
-                    ImageDisabled = ImageDefault;
+                    ImageSourceDisabled = ImageSourceDefault;
                 }
-                if (ImagePressed == null)
+                if (ImageSourcePressed == null)
                 {
-                    ImagePressed = ImageDefault;
+                    ImageSourcePressed = ImageSourceDefault;
                 }
             }
 

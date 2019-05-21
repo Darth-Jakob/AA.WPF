@@ -205,7 +205,7 @@
                                 <ColumnDefinition Width="auto"/>
                                 <ColumnDefinition Width="auto"/>
                             </Grid.ColumnDefinitions>
-                            <Image x:Name="img" Stretch="None" Source="{TemplateBinding ImageDefault}" 
+                            <Image x:Name="img" Stretch="None" Source="{TemplateBinding ImageSourceDefault}" 
                                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}" 
                                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"/>
                             <TextBlock x:Name="PART_TXT" Grid.Column="1" Text="{TemplateBinding Text}"
@@ -217,21 +217,21 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="img" Property="Source" Value="{Binding ImageOver, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <Setter TargetName="img" Property="Source" Value="{Binding ImageSourceOver, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="Foreground" Value="{Binding ForegroundMouseOver, RelativeSource={RelativeSource TemplatedParent}}"/>
                         </Trigger>
                         <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="img" Property="Source" Value="{Binding ImagePressed, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <Setter TargetName="img" Property="Source" Value="{Binding ImageSourcePressed, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="Foreground" Value="{Binding ForegroundPressed, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="FontWeight" Value="Bold"/>
                         </Trigger>
                         <Trigger Property="IsMouseCapturing" Value="True">
-                            <Setter TargetName="img" Property="Source" Value="{Binding ImagePressed, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <Setter TargetName="img" Property="Source" Value="{Binding ImageSourcePressed, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="Foreground" Value="{Binding ForegroundPressed, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="FontWeight" Value="Bold"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="img" Property="Source" Value="{Binding ImageDisabled, RelativeSource={RelativeSource TemplatedParent}}"/>
+                            <Setter TargetName="img" Property="Source" Value="{Binding ImageSourceDisabled, RelativeSource={RelativeSource TemplatedParent}}"/>
                             <Setter TargetName="PART_TXT" Property="Foreground" Value="{Binding ForegroundDisable, RelativeSource={RelativeSource TemplatedParent}}"/>
                         </Trigger>
                         <Trigger Property="TextLocation" Value="Left">

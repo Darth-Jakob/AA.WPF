@@ -105,7 +105,7 @@ namespace AA.WPF.Controls
                 if (Math.Abs(_startMousePoint.X - _moveMousePoint.X) > 15 || Math.Abs(_startMousePoint.Y - _moveMousePoint.Y) > 15)
                 {
                     //drag 시작
-                    DataObject dragData = new DataObject("ChannelItem", this);
+                    DataObject dragData = new DataObject("TEST", this);
                     DragDrop.DoDragDrop(this, dragData, DragDropEffects.Move);
                 }
             }
@@ -117,9 +117,9 @@ namespace AA.WPF.Controls
             base.OnPreviewDrop(e);
 
             //dragdata 검증
-            if (e.Data.GetDataPresent("ChannelItem"))
+            if (e.Data.GetDataPresent("TEST"))
             {
-                var dragSource = e.Data.GetData("ChannelItem");
+                var dragSource = e.Data.GetData("TEST");
 
                 var owner = ItemsControl.ItemsControlFromItemContainer(this);
                 if (owner is DDListbox)
@@ -138,7 +138,7 @@ namespace AA.WPF.Controls
         protected override void OnDragEnter(DragEventArgs e)
         {
             base.OnDragEnter(e);
-            if (e.Data.GetDataPresent("ChannelItem"))
+            if (e.Data.GetDataPresent("TEST"))
             {
                 IsDragOver = true;
             }
