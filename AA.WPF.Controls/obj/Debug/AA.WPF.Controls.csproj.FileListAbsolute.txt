@@ -33,3 +33,4 @@ D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\Themes\Generic.baml
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.g.resources
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.Properties.Resources.resources
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csproj.GenerateResource.Cache
+D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csprojResolveAssemblyReference.cache
