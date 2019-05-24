@@ -33,4 +33,14 @@ D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\Themes\Generic.baml
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.g.resources
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.Properties.Resources.resources
 D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csproj.GenerateResource.Cache
-D:\git\AA.WPF\AA.WPF.Controls\obj\Debug\AA.WPF.Controls.csprojResolveAssemblyReference.cache
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\System.Windows.Interactivity.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.Controls\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll

@@ -7,4 +7,14 @@ D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\AA.WPF.MVVM.dll
 D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\AA.WPF.MVVM.pdb
 D:\git\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.dll
 D:\git\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.pdb
-D:\git\AA.WPF\AA.WPF.MVVM\obj\Debug\AA.WPF.MVVM.csprojResolveAssemblyReference.cache
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\System.Windows.Interactivity.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\de\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\en\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\es\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\fr\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\it\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\ja\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\ko\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\ru\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+D:\git\AA.WPF\AA.WPF.MVVM\bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll

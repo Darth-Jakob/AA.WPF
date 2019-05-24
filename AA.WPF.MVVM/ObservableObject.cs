@@ -11,7 +11,7 @@ namespace AA.WPF.MVVM
     /// <summary>
     /// Data Binding 가능하도록하는 부모 class
     /// </summary>
-    internal class ObservableObject : INotifyPropertyChanged
+    public class ObservableObject : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public void RaisePropertyChanged(string propertyName)
